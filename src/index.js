@@ -5,7 +5,7 @@ import indexRoutes from './routes/index.routes.js'
 const app = express()
 app.use(express.json())
 app.use(indexRoutes)
-app.use(employeesRoutes)
+app.use('/api', employeesRoutes)
 
 app.listen(3000)
 console.log('server running on port 3000')
