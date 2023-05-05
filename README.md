@@ -3,8 +3,8 @@
 ### Installation
 
 ```
-git clone https://github.com/fazt/nodejs-mysql-restapi
-cd nodejs-mysql-restapi
+git clone git@github.com:amaneiro7/node_mysql_restapi_test.git
+cd node_mysql_restapi_test
 docker-compose up
 npm install
 npm run dev

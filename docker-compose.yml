@@ -1,13 +1,15 @@
-version: '3.3'
+version: '3.8'
 
 services:
   mysql:
     image: mysql
+    container_name: companydb
+    restart: always
     environment:
+      - MYSQL_ROOT_PASSWORD=mypassword
       - MYSQL_DATABASE=compproanydb
       - MYSQL_USER=root
-      - MYSQL_ROOT_PASSWORD=avion01.
-      - MYSQL_PORT=3306
+      - MYSQL_PASSWORD=amaneiro7password
     ports:
       - 3306:3306
     volumes:
